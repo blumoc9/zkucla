@@ -1,0 +1,45 @@
+<window title="MVC CRUD" border="normal" apply="com.sigarep.controlador.ControladorProfesor" width="600" height="500">
+   <style src="/widgets/input/form_sample/style.css" />
+   	<grid>
+   		<columns>
+   		 		<column label="" width="180px" />
+                <column label="" width="180px"  /> 
+   		</columns>
+   		<rows>
+   		 	<row>
+   		 	  <label value="Nombre:" width="150px" />
+                    <hlayout>
+                        <textbox id="txtnombre" width="150px" tabindex="1" />
+                    </hlayout>
+   		 	</row>
+   		 	<row>
+               <label value="Apellido:" width="150px" />
+                    <textbox  id="txtapellido" width="150px" tabindex="2" />
+            </row>
+            <row>
+               <label value="Email:" width="150px" />
+                    <textbox  id="txtemail" width="150px" tabindex="3" />
+            </row>
+   		 	<row>
+                     <vlayout>
+                            <button label="Guardar" id="btnguardar" width="100px" height="30px" />
+                     </vlayout>
+   		 	</row>
+   		 	<row>
+   		 	<grid>
+			<columns>
+				<column label="Nombre"/>
+				<column label="Apellido"/>
+				<column label="Email"/>
+			</columns>
+		<rows>
+			<row>	
+			
+			</row>
+		</rows>
+	</grid>
+   		 	</row>
+   		
+   		</rows>
+   	</grid>
+</window>
