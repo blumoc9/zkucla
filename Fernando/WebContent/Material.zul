@@ -1,0 +1,17 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<borderlayout>
+	<center>
+		<window title="registrar material!!" border="normal"  width="350px" minheight="350" sclass="sysWin" contentStyle="overflow:auto" apply="org.zkoss.bind.BindComposer"
+				viewModel="@id('vm') @init('com.sigarep.viewmodels.MaterialViewModels')">
+			<vbox>
+				nombre:	<textbox id="txtnombre" value="@bind(vm.nombre)" />
+					
+				descripcion:	<textbox id="txtdesp" value="@bind(vm.desp)"/>
+					
+				<button label="registrar" onClick="@command('RegistrarMaterial')"/>
+			</vbox>
+		</window>
+	</center>
+</borderlayout>
+</zk>
