@@ -8,11 +8,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import com.sigarep.modelo.Profesor;
-import com.sigarep.repository.IProfesorDAO;
+import com.sigarep.repository.IProfesorRepositorio;
 
 @Service("sp")
 public class ServicioProfesor{
-	private @Autowired IProfesorDAO pr = new IProfesorDAO() {
+	private @Autowired IProfesorRepositorio pr = new IProfesorRepositorio() {
 		
 		@Override
 		public <S extends Profesor> S save(S arg0) {
